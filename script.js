@@ -15301,8 +15301,20 @@ const dayOffset = msOffset / 1000 / 60 / 60 / 24
 //const targetWord = targetWords[Math.floor(dayOffset)]
 const randomIndex = Math.floor(Math.random() * targetWords.length);
 const targetWord = targetWords[randomIndex];
-//const targetWord = targetWords[Math.floor(dayOffset)]
 
+const tooltipTrigger = document.querySelector('.tooltip-trigger');
+const tooltipContainer = document.querySelector('.tooltip-container');
+
+tooltipTrigger.addEventListener('mouseover', () => {
+    const rect = tooltipTrigger.getBoundingClientRect();
+    tooltipContainer.style.left = rect.left + 'px';
+    tooltipContainer.style.top = rect.bottom + 'px';
+    tooltipContainer.style.display = 'block';
+});
+
+tooltipTrigger.addEventListener('mouseout', () => {
+    tooltipContainer.style.display = 'none';
+});
 
 console.log(targetWord)
 startInteraction()
