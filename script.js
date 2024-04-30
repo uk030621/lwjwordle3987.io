@@ -15316,7 +15316,7 @@ tooltipTrigger.addEventListener('mouseout', () => {
     tooltipContainer.style.display = 'none';
 });
 
-console.log(targetWord)
+
 startInteraction()
 
 function startInteraction() {
