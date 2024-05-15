@@ -15487,23 +15487,7 @@ function checkWinLose(guess, tiles) {
   }
 }
 
-// JavaScript to prevent zoom on double letter
- (function() {
-  let lastKeyTime = 0;
-  let lastKey = '';
 
-  document.getElementById('textInput').addEventListener('keydown', function(event) {
-      const key = event.key;
-      const currentTime = new Date().getTime();
-
-      if (key === lastKey && (currentTime - lastKeyTime) < 500) {
-          event.preventDefault();
-      }
-
-      lastKey = key;
-      lastKeyTime = currentTime;
-  });
-})();
 
 function danceTiles(tiles) {
   tiles.forEach((tile, index) => {
