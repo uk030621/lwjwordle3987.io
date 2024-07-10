@@ -96,21 +96,7 @@
       // Reload the current page
       location.reload();
     }
-
-    (function() {
-      let lastTouchTime = 0;
-
-      // Prevent double-tap zoom for all .key buttons
-      document.querySelectorAll('.key').forEach(button => {
-          button.addEventListener('touchend', function(event) {
-              const currentTime = new Date().getTime();
-              if (currentTime - lastTouchTime < 300) {
-                  event.preventDefault();  // Prevent double-tap zoom
-              }
-              lastTouchTime = currentTime;
-          });
-      });
-  })();
+    
     
   </script>
 </body>

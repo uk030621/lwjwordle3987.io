@@ -15487,7 +15487,6 @@ function checkWinLose(guess, tiles) {
   }
 }
 
-
 function danceTiles(tiles) {
   tiles.forEach((tile, index) => {
     setTimeout(() => {
