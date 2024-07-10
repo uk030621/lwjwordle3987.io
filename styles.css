@@ -73,8 +73,9 @@ body {
 .keylarge1 {
   background-color: black;
   color: grey;
+  font-size: large;
   border-radius: 7px;
-  margin-top: 6px;
+  margin-top: 4px;
   border: 5px;
 }
 
