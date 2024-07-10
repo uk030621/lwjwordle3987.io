@@ -15302,19 +15302,19 @@ const dayOffset = msOffset / 1000 / 60 / 60 / 24
 const randomIndex = Math.floor(Math.random() * targetWords.length);
 const targetWord = targetWords[randomIndex];
 
-const tooltipTrigger = document.querySelector('.tooltip-trigger');
-const tooltipContainer = document.querySelector('.tooltip-container');
+//const tooltipTrigger = document.querySelector('.tooltip-trigger');
+//const tooltipContainer = document.querySelector('.tooltip-container');
 
-tooltipTrigger.addEventListener('mouseover', () => {
-    const rect = tooltipTrigger.getBoundingClientRect();
-    tooltipContainer.style.left = rect.left + 'px';
-    tooltipContainer.style.top = rect.bottom + 'px';
-    tooltipContainer.style.display = 'block';
-});
+//tooltipTrigger.addEventListener('mouseover', () => {
+    //const rect = tooltipTrigger.getBoundingClientRect();
+    //tooltipContainer.style.left = rect.left + 'px';
+    //tooltipContainer.style.top = rect.bottom + 'px';
+    //tooltipContainer.style.display = 'block';
+//});
 
-tooltipTrigger.addEventListener('mouseout', () => {
-    tooltipContainer.style.display = 'none';
-});
+//tooltipTrigger.addEventListener('mouseout', () => {
+    //tooltipContainer.style.display = 'none';
+//});
 
 
 startInteraction()
@@ -15486,6 +15486,7 @@ function checkWinLose(guess, tiles) {
     stopInteraction()
   }
 }
+
 
 function danceTiles(tiles) {
   tiles.forEach((tile, index) => {

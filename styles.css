@@ -70,6 +70,19 @@ body {
   border-radius: 10px;
 }
 
+.keylarge1 {
+  background-color: black;
+  color: grey;
+  border-radius: 7px;
+  margin-top: 6px;
+  border: 5px;
+}
+
+.keylarge1:hover {
+  background-color: lightcyan;
+  color: black;
+}
+
 .key > svg {
   width: 1.75em;
   height: 1.75em;
