@@ -3,6 +3,11 @@
   font-family: Arial;
 }
 
+.heading{
+  color:greenyellow;
+  font-size: 2rem;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -36,7 +41,7 @@ body {
   display: grid;
   grid-template-columns: repeat(20, minmax(auto, 1.25em));
   grid-auto-rows: 3em;
-  gap: .45em;
+  gap: .55em;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -115,7 +120,7 @@ body {
   align-content: center;
   flex-grow: 1;
   grid-template-columns: repeat(5, 4em);
-  grid-template-rows: repeat(6, 4em);
+  grid-template-rows: repeat(6, 3em);
   gap: .25em;
   min-width: 320px; /* Adjust the minimum width as needed */
   margin-top: 20px;
