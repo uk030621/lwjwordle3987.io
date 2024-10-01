@@ -36,7 +36,7 @@ body {
   display: grid;
   grid-template-columns: repeat(20, minmax(auto, 1.25em));
   grid-auto-rows: 3em;
-  gap: .15em;
+  gap: .45em;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
